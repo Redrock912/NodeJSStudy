@@ -1,0 +1,6 @@
+npm init
+
+package.json 으로 이름 
+
+
+npm install formidable --save
