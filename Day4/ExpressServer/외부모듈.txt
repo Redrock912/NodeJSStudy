@@ -1,0 +1,13 @@
+npm init
+
+npm install express --save
+
+Get 요청할때 주소에서 검색
+http://localhost:8000/?id=Henry&pw=1234321
+
+
+Day4
+
+npm install body-parser --save
+
+npm install connect-multiparty --save
