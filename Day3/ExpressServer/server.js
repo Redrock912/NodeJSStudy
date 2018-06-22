@@ -41,19 +41,48 @@ var app = express();
 
 // 요청 처리
 // app.post();
-app.get('/', function(req,res){
+// app.get('/', function(req,res){
 
-    // Get 요청에서 전달받은 정보 읽기.
-    var id = req.query.id;
-    var pw = req.query.pw;
+//     //User-Agent 속성 출력
+//     console.log(req.header('User-Agent'));
 
-    var data = {
-        'id' : id,
-        'pw' : pw
-    };
+//     var agent = req.header('User-Agent');
+//     // if(agent.toLowerCase().match("chrome")){
+//     //     res.send("Hello Chrome");
+//     // }else if(agent.toLowerCase().match('firefox')){
+//     //     res.send('Hello Firefox');
+//     // }else {
+//     //     res.send('Hello Edge');
+//     // }
 
-    res.send(data);
+//     // Get 요청에서 전달받은 정보 읽기.
+//     var id = req.query.id;
+//     var pw = req.query.pw;
 
+//     var data = {
+//         'id' : id,
+//         'pw' : pw
+//     };
+
+//     res.send(data);
+
+// });
+
+// use 안의 함수들은 미들웨어라 부른다.
+app.use(function(req,res,next){
+    console.log('first');
+    next();
+});
+
+app.use(function(req,res,next){
+    console.log('second');
+    next();
+});
+
+app.use(function(req,res,next){
+    console.log('third');
+    
+    res.send('Express Server');
 });
 
 // 서버 생성
