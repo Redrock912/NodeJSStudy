@@ -1,0 +1,5 @@
+npm init --yes 
+모든 기본값을 그대로 사용.
+
+npm install express --save-exact
+exact 를 쓰면 그냥 지금버젼 정보만 나옴. 최신버젼에서 호환되는 버젼을 사용하지않고, 이 버젼만 사용.
