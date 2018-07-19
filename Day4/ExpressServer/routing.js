@@ -32,7 +32,7 @@ routerB.get('/index', function(req,res){
 // 라우터 적용
 app.use(bodyParser.urlencoded({ extended: false })); // 바디 파서가 먼저와야 한다.
 //app.use(bodyParser()); // 구 버젼
-app.use('/a',routerA); // /a/index
+app.use('/a',routerA); // /a/login
 app.use('/b',routerB); // /b/index
 
 

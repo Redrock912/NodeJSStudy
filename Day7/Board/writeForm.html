@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>게시판 글쓰기</title>
+</head>
+
+<body>
+    <fieldset style="width: 40%;">
+
+        <legend>글쓰기</legend>
+        <form action="/board" method="post" enctype="application/x-www-form-urlencoded">
+            <table style = "width:100%; box-sizing: border-box;">
+                <tr>
+                    <td align="right" style= "width:10%; box-sizing: border-box;">
+                        제목
+                    </td>
+                    <td align="right" style= "width:100%; box-sizing: border-box;">
+                        <input type="text" name="title">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" style= "width:10%; box-sizing: border-box;">내용</td>
+                    <td>
+                        <textarea name="content" style = "width:100%; box-sizing: border-box;"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="submit" value="작성완료">
+                    </td>
+                    <td>
+                        <input type="reset" value="취소">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>

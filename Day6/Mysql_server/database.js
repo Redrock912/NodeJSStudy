@@ -5,7 +5,7 @@ var mysql = require('mysql');
 var client = mysql.createConnection({
     user : 'root',
     password : 'admin',
-    database : 'restdb'
+    database : 'userdb'
 });
 
 // 데이터베이스 연결.
